@@ -59,6 +59,26 @@ $(document).ready(function () {
                 else if ($(this).text() === '☞') {
                     myindex++;
                 }
+                else if($(this).text() === 'DEL'){
+                    posi = getCaretPosition(textbox);
+                    if(displayValue.length>0 && posi.end != 0 && displayValue != ''){ // 빈문자열이 아니고 커서의 위치가 맨 앞이 아닐 경우
+                        var str="";
+                        if(posi.start==posi.end){ // 한문자만 삭제하는 경우
+                            str = displayValue.substring(0, posi.start-1);
+                            len = 1;
+                        }
+                        else{ // 드래그 영역을 삭제하는 경우
+                            str = displayValue.substring(0, posi.start);
+                            len = 0;
+                        }
+                        str += displayValue.substring(posi.end, displayValue.length);
+                        displayValue = str;
+                        hisSave(displayValue, resultValue);
+                        $('#display').text(displayValue);
+                        setCaretPosition(textbox, 0, posi.start-len, posi.start-len);
+                    }
+                }
+
                 else {
                     displayValue += $(this).text();
                     $('#ohoh').text(displayValue);
