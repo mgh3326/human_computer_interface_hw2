@@ -17,8 +17,20 @@
     </script>
 
     <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ "HTML-CSS": { scale: 75} });
-")
+        MathJax.Hub.Config({ "HTML-CSS": { scale: 75} }); ")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,61 +45,96 @@
 <div id="calculator">
 
     <!--<textarea id="helper" readonly></textarea>-->
-    <textarea id="ohoh" onkeydown="filter(event);"></textarea> <!-- readonly -->
+    <textarea id="ohoh" onkeydown="filter(event);"></textarea>
+    <!-- readonly -->
     <textarea id="result" readonly></textarea>
     <!--<div id="ohoh"></div>-->
     <!--<div id="result"></div>-->
-    <div id="p1">
-        <span class="key">Shift</span>
-        <span class="key">◀</span>
-        <span class="key">↑</span>
-        <span class="key">▶</span>
-        <span class="key">☜</span>
-        <span class="key clear-key">CL</span>
-        <span class="key">←</span>
-        <span class="key">→</span>
-        <span class="key">↓</span>
-        <span class="key">♬</span>
-        <span class="key">pi</span>
-        <span class="key">log</span>
+
+    <span class="key shift-key">Shift</span>
+    <span class="key">◀</span>
+    <span class="key function-key">DEL</span>
+    <span class="key">▶</span>
+
+    <span class="key">☜</span>
+    <span class="key clear-key">AC</span>
+
+    <span class="key">←</span>
+
+    <span class="key function-key">ANS</span>
+    <span class="key">→</span>
+    <!--<span class="key">☞</span>-->
+    <span class="key eval-key">EV</span>
+
+    <div id="p0">
+        <span class="key symbol-key">pi</span>
+        <span class="key function-key">log</span>
         <span class="key function-key">sin</span>
         <span class="key function-key">cos</span>
         <span class="key function-key">tan</span>
         <span class="key symbol-key">x</span>
-        <span class="key symbol-key">x<sup>2</sup></span>
-        <span class="key">sqrt</span>
-        <span class="key">(</span>
-        <span class="key">)</span>
-        <span class="key">9</span>
-        <span class="key">8</span>
-        <span class="key">9</span>
-        <span class="key">*</span>
-        <span class="key">/</span>
-        <span class="key">4</span>
-        <span class="key">5</span>
-        <span class="key">6</span>
-        <span class="key">+</span>
-        <span class="key">-</span>
-        <span class="key">1</span>
-        <span class="key">2</span>
-        <span class="key">3</span>
-        <span class="key eval-key">EV</span>
-        <span class="key">0</span>
-        <span class="key">=</span>
-
-        <span class="key eval-key">EV</span>
+        <span class="key function-key">inv</span>
+        <span class="key function-key">sqrt</span>
+        <span class="key operator-key">(</span>
+        <span class="key operator-key">)</span>
+        <span class="key num-key">7</span>
+        <span class="key num-key">8</span>
+        <span class="key num-key">9</span>
+        <span class="key operator-key">*</span>
+        <span class="key operator-key">/</span>
+        <span class="key num-key">4</span>
+        <span class="key num-key">5</span>
+        <span class="key num-key">6</span>
+        <span class="key operator-key">+</span>
+        <span class="key operator-key">-</span>
+        <span class="key num-key">1</span>
+        <span class="key num-key">2</span>
+        <span class="key num-key">3</span>
+        <span class="key symbol-key">=</span>
+        <span class="key function-key">,</span>
+        <span class="key num-key">0</span>
         <span class="key function-key">exp</span>
         <span class="key function-key">cross</span>
         <span class="key function-key">det</span>
-        <span class="key function-key">res</span>
+        <span class="key function-key">deg</span>
 
-        <br>
-        <span style="width:95px" class="key menu-key">My</span>
-        <span style="width:95px" class="key menu-key">Mode</span>
-        <span style="width:95px" class="key menu-key"><<</span>
-        <span style="width:95px" class="key menu-key">>></span>
 
     </div>
+    <div id="s0">
+        <span class="key function-key">log10</span>
+        <span class="key function-key">asin</span>
+        <span class="key function-key">acos</span>
+        <span class="key function-key">atan</span>
+        <span class="key function-key">!</span>
+        <span class="key symbol-key">e</span>
+        <span class="key operator-key">%</span>
+        <span class="key operator-key">^</span>
+        <span class="key operator-key"><</span>
+        <span class="key operator-key"><</span>
+        <span class="key operator-key"><=</span>
+        <span class="key operator-key">>=</span>
+        <span class="key symbol-key">[</span>
+        <span class="key symbol-key">]</span>
+        <span class="key symbol-key">:</span>
+        <span class="key operator-key">==</span>
+        <span class="key operator-key">!=</span>
+        <span class="key symbol-key">;</span>
+        <span class="key symbol-key">i</span>
+        <span class="key symbol-key">w</span>
+        <span class="key symbol-key">x</span>
+        <span class="key symbol-key">y</span>
+        <span class="key symbol-key">z</span>
+        <span class="key symbol-key">f</span>
+        <span class="key symbol-key">g</span>
+
+    </div>
+    <br>
+    <span style="width:95px" class="key menu-key">My</span>
+    <span style="width:95px" class="key menu-key">Mode</span>
+    <span style="width:95px" class="key menu-key">
+                <<</span>
+    <span style="width:95px" class="key menu-key">>></span>
+
 
 </div>
 </body>

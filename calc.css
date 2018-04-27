@@ -33,7 +33,7 @@ h1 {
 
 #ohoh {
     width: 385px;
-    height: 200px;
+    height: 150px;
     margin-bottom: 5px;
     padding: 0px 5px 0px 5px;
 	background: #edefe0; /* Old browsers */
@@ -48,7 +48,7 @@ h1 {
     overflow: hidden;
     box-shadow: inset 0 0px 3px;
 
-    font: 45px digital;
+    font: 20px digital;
 }
 
 #result {
@@ -69,6 +69,7 @@ h1 {
     overflow: hidden;
     box-shadow: inset 0 0px 3px;
     font: 20px digital;
+    text-align: right;
 }
 
 #latex {
@@ -89,7 +90,7 @@ h1 {
 
 .key {
     width: 75px;
-    height: 30px;
+    height: 20px;
     background-color: #eeeeee;
     display: inline-flex;
     margin: 3px 5px 8px 0px;
@@ -105,23 +106,35 @@ h1 {
 }
 
 .symbol-key {
-    font: italic 20px "Times New Roman"
+    font: italic 20px "Times New Roman";
+    background-color: #588abb;
+    color: #000000;
 }
 
 .function-key {
-    font: italic 15px "Times New Roman"
+    /*font: italic 15px "Times New Roman";*/
+    background-color: #b2bb00;
+    color: #000000;
+}
+.operator-key {
+    /*font: italic 15px "Times New Roman";*/
+    background-color: #ad70bb;
+    color: #000000;
 }
 
 .eval-key {
     background-color: #32bb23;
-    color: white;
+    color: #000000;
 }
 
 .clear-key {
     background-color: #bb0034;
-    color: white;
+    color: #000000;
 }
-
+.num-key {
+    background-color: #bb7e00;
+    color: #000000;
+}
 .key:active {
     background-color: #a1a1a1;
     box-shadow: 0 5px #666;
@@ -130,4 +143,8 @@ h1 {
 .menu-key{
     background-color: rgb(255, 175, 222);
     border-radius: 50%;
+}
+.shift-key{
+    background-color: rgb(255, 175, 222);
+    color: #000000;
 }
