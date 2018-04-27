@@ -18,7 +18,14 @@ h1 {
 #calculator {
     font-size: 0;
     width: 400px;
-    background-color: #484848;
+    background: #141414; /* Old browsers */
+	background: -moz-linear-gradient(top,  #141414 45%, #282828 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#141414), color-stop(80%,#282828)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #141414 45%,#282828 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #141414 45%,#282828 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #141414 45%,#282828 80%); /* IE10+ */
+	background: linear-gradient(to bottom,  #141414 45%,#282828 80%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
     padding: 20px;
     margin: auto;
     border-radius: 10px;
@@ -26,16 +33,22 @@ h1 {
 
 #ohoh {
     width: 385px;
-    height: 300px;
-    margin-bottom: 15px;
+    height: 200px;
+    margin-bottom: 5px;
     padding: 0px 5px 0px 5px;
-    background-color: #cddecc;
-    border-radius: 5px;
+	background: #edefe0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #edefe0 45%, #babea2 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#edefe0), color-stop(80%,#babea2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* IE10+ */
+	background: linear-gradient(to bottom,  #edefe0 45%,#babea2 80%); /* W3C */    border-radius: 5px;
     justify-content: flex-end;
     align-items: center;
     overflow: hidden;
     box-shadow: inset 0 0px 3px;
-    font: 20px digital;
+
+    font: 45px digital;
 }
 
 #result {
@@ -43,8 +56,13 @@ h1 {
     height: 35px;
     margin-bottom: 15px;
     padding: 0px 5px 0px 5px;
-    background-color: #cddecc;
-    border-radius: 5px;
+	background: #edefe0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #edefe0 45%, #babea2 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#edefe0), color-stop(80%,#babea2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #edefe0 45%,#babea2 80%); /* IE10+ */
+	background: linear-gradient(to bottom,  #edefe0 45%,#babea2 80%); /* W3C */    border-radius: 5px;
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
@@ -81,8 +99,9 @@ h1 {
     padding: 5px 0px 5px 0px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 3px 0 #a1a1a1, 0 2px 5px rgba(0, 0, 0, .75);
+    box-shadow: 0 3px 0 #d8d1ff, 0 2px 5px rgba(0, 0, 0, .75);
     font: bold 20px sans-serif;
+    
 }
 
 .symbol-key {
@@ -94,12 +113,12 @@ h1 {
 }
 
 .eval-key {
-    background-color: #4a9840;
+    background-color: #32bb23;
     color: white;
 }
 
 .clear-key {
-    background-color: #bb1c09;
+    background-color: #bb0034;
     color: white;
 }
 
@@ -107,4 +126,8 @@ h1 {
     background-color: #a1a1a1;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+.menu-key{
+    background-color: rgb(255, 175, 222);
+    border-radius: 50%;
 }

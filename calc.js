@@ -20,10 +20,10 @@ $(document).ready(function () {
                     }
                     $('#result').text(displayValue);
                     displayValue = '0';
-                } catch (e) {
+                } catch (err) {
                     displayValue = '0';
                     if (displayValue != 'function') {
-                        $('#result').text(e);
+                        $('#result').text(err);
                     }
                 }
             } else {
