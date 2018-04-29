@@ -2,11 +2,16 @@ var myindex = 0;
 
 $(document).ready(function () {
     var parser = math.parser();
+    $("#p0").show();
+    $("#s0").hide();
+    $("#yeah").show();
+    $("#keyboard").hide();
+    $("#lower").show();
+    $("#capital").hide();
 
     if (myindex === 0)//0번째 페이지
     {
-        $("#p0").show();
-        $("#s0").hide();
+
 
     }
     else if (myindex === 1)//1번째 페이지
@@ -51,6 +56,14 @@ $(document).ready(function () {
                 else if ($(this).text() === 'Shift') {
                     $("#p0").toggle();
                     $("#s0").toggle();
+                    $("#capital").toggle();
+                    $("#lower").toggle();
+
+
+                }
+                else if ($(this).text() === 'Mode') {
+                    $("#yeah").toggle();
+                    $("#keyboard").toggle();
 
                 }
                 else if ($(this).text() === '☜') {
@@ -61,7 +74,10 @@ $(document).ready(function () {
                 }
                 else if ($(this).text() === 'DEL') {
                     if (displayValue.length > 0) { // 빈문자열이 아닐 경우
-                        $('#ohoh').text(displayValue.substring(0, displayValue.length - 1));//이거 맨 뒤 한글자만 줄일때
+                        str="";
+                        str= displayValue.substring(0, displayValue.length - 1);
+                        displayValue=str;
+                        $('#ohoh').text(displayValue);//이거 맨 뒤 한글자만 줄일때
                     }
                 }
                 else if ($(this).text() === 'ANS') {

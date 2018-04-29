@@ -148,3 +148,34 @@ h1 {
     background-color: rgb(255, 175, 222);
     color: #000000;
 }
+.keyboard_key {
+     width: 25px;
+     height: 10px;
+     background-color: #eeeeee;
+     display: inline-flex;
+     margin: 3px 5px 8px 0px;
+     vertical-align: middle;
+     justify-content: center;
+     align-items: center;
+     padding: 5px 0px 5px 0px;
+     border-radius: 4px;
+     cursor: pointer;
+     box-shadow: 0 3px 0 #d8d1ff, 0 2px 5px rgba(0, 0, 0, .75);
+     font: bold 20px sans-serif;
+
+ }
+.eng {
+
+}
+.enter {
+    width: 50px;
+    background-color: #000000;
+    box-shadow: 0 3px 0 #d8d1ff, 0 2px 5px rgba(0, 0, 0, .75);
+    color: #ffffff;
+
+}
+.shift {
+
+    width: 43px;
+
+}
